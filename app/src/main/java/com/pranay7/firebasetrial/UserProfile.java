@@ -3,7 +3,11 @@ package com.pranay7.firebasetrial;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,6 +52,19 @@ public class UserProfile extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.user_profile_logout_menu,menu);
+        return true;
+    }
+
+    public void logoutOptionClicked(@NonNull MenuItem item){
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
 

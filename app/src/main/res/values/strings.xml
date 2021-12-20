@@ -11,4 +11,7 @@
     <string name="register_user">Register User</string>
     <string name="profile">Profile</string>
     <string name="logout">Logout</string>
+    <string name="email">Email:</string>
+    <string name="full_name_">Full Name:</string>
+    <string name="welcome">WELCOME!</string>
 </resources>

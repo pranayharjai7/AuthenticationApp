@@ -28,7 +28,6 @@ public class AfterLoginActivity extends AppCompatActivity {
     }
 
     public void profileOptionClicked(@NonNull MenuItem item){
-        Toast.makeText(this,"profile menu option clicked",Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
