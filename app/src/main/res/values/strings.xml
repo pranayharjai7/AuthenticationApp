@@ -9,4 +9,6 @@
     <string name="free_mobility">FREE MOBILITY</string>
     <string name="full_name">Full Name</string>
     <string name="register_user">Register User</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -11,10 +11,15 @@
         android:theme="@style/Theme.FirebaseTrial">
         <activity
             android:name=".UserProfile"
+            android:exported="false"
+            android:parentActivityName=".AfterLoginActivity"/>
+        <activity
+            android:name=".AfterLoginActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterUser"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

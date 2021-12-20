@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void userProfile() {
-        Intent intent = new Intent(this, UserProfile.class);
+        Intent intent = new Intent(this, AfterLoginActivity.class);
         startActivity(intent);
     }
 
