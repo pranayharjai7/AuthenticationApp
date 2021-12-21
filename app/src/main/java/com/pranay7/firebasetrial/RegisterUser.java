@@ -75,6 +75,8 @@ public class RegisterUser extends AppCompatActivity {
                         if(task.isSuccessful()){
                             User user = new User(fullName,emailAddress);
                             realTime(user);
+                            Intent intent = new Intent(RegisterUser.this, MainActivity.class);
+                            startActivity(intent);
                         }
                         else{
                             Toast.makeText(RegisterUser.this,"Failed to register, try again!",Toast.LENGTH_LONG).show();

@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            //redirect to UserProfile
-                            userProfile();
+                            //redirect to AfterLoginActivity
+                            afterLogin();
                         }
                         else{
                             Toast.makeText(MainActivity.this,"Failed to login! Please check your credentials",Toast.LENGTH_LONG).show();
@@ -71,10 +71,14 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void userProfile() {
+    private void afterLogin() {
         Intent intent = new Intent(this, AfterLoginActivity.class);
         startActivity(intent);
     }
 
 
+    public void forgotPasswordClicked(View view) {
+        Intent intent = new Intent(this, ForgotPassword.class);
+        startActivity(intent);
+    }
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,5 +37,17 @@ public class AfterLoginActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+    }
+
+    public void startButtonClicked(View view) {
+    }
+
+    public void pauseButtonClicked(View view) {
+    }
+
+    public void resetButtonClicked(View view) {
+    }
+
+    public void stopButtonClicked(View view) {
     }
 }

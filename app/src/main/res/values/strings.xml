@@ -5,8 +5,8 @@
     <string name="login">LOGIN</string>
     <string name="password">Password</string>
     <string name="email_address">Email Address</string>
-    <string name="go_on_with_your_life">Go on with your life</string>
-    <string name="free_mobility">FREE MOBILITY</string>
+    <string name="go_on_with_your_life">Firebase</string>
+    <string name="free_mobility">AUTH APP</string>
     <string name="full_name">Full Name</string>
     <string name="register_user">Register User</string>
     <string name="profile">Profile</string>
@@ -14,4 +14,6 @@
     <string name="email">Email:</string>
     <string name="full_name_">Full Name:</string>
     <string name="welcome">WELCOME!</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="reset_password">Reset Password</string>
 </resources>
