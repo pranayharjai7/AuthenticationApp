@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //redirect to AfterLoginActivity
+                            binding.progressBar.setVisibility(View.GONE);
                             afterLogin();
                         }
                         else{
